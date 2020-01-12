@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="/frogstyle.css">
+
+.flex-container {
+/*   padding: 50px; */
+  display: flex;
+  flex-direction: column;
+}
+.half-text {
+  
+  width: 600px;
+}
+.fourth-image {
+  
+  vertical-align: center;
+/*   float: right; */
+  width:20%;
+/*   width:13%; */
+/*   position: absolute; */
+/*   left: 40%; */
+/*   top: 25px;  */
+}
+.half-image{
+  vertical-align: center;
+  width: 45%;
+}
+.item {
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+.inner {
+  background: white;
+}
+.photos-row{
+  display:flex;
+  justify-content: space-evenly; 
+  flex-direction:row;
+}
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  padding-bottom: 50px;
+  line-height: 200%;
+}
+h1 {
+  font-style: italic;
+  color: #0000FF;
+  font-size: large;
+  line-height: 200%;
+}
+.inner {
+  padding: 40px;
+  resize: vertical;
+  overflow: auto;
+}
+.top{
+  background-color:transparent;
+}

@@ -1,0 +1,104 @@
+/* CSS files add styling rules to your content */
+<link rel="stylesheet" href="/style.css">
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+/*   padding-bottom: 50px; */
+  line-height: 200%;
+}
+
+h1 {
+  font-style: italic;
+  color: #0000FF;
+  font-size: large;
+  line-height: 200%;
+}
+
+h2 {
+/*   front-size: large; */
+}
+
+.tiny-font {
+  font-size:30px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-style: italic ;
+}
+
+
+.home {
+  font-style: italic;
+  color: #0000FF;
+}
+
+
+.parent {
+  dislay: flex;
+  background: white;
+  height: 600px;
+/*   width: 200px; */
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  resize: vertical;
+  overflow: auto;
+}
+
+.inner {
+  color: white;
+  padding: 40px; 
+  resize: vertical;
+  overflow: auto;
+}
+
+
+.container {
+  position: relative;
+/*   margin-bottom:50px; */
+}
+
+.picture_format{
+  position: absolute;
+  left: 40%;
+  top: 30px; 
+  width: 100%;
+  z-index: -1;
+  margin-bottom: 35px;
+}
+
+.resume_format{
+  position: absolute;
+  left:25%;
+  top: 10%;
+  width: 100%;
+}
+
+.about_text_format{
+  position: absolute;
+  left:150px;
+  top: 120px;
+/*   position: fixed; */
+  width: 700px;
+}
+
+.figma_text_format{
+/*   position: absolute; */
+  top:200px;
+  left:400px;
+  width: 700px;
+  padding: 40px;
+  height: 700px;
+  vertical-align: center;
+  float: left;
+}
+
+.figma_container{
+  style=display:inline-block;
+  vertical-align:top;
+  left:400px;
+}
+
+.figma_picture{
+  float: left;
+}
