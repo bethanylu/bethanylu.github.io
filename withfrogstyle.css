@@ -7,7 +7,12 @@
 }
 .half-text {
   
-  width: 600px;
+/*   width: 600px; */
+  width: 40%;
+}
+.qtsab-sixty {
+  width:60%;
+  padding-left:30px;
 }
 .fourth-image {
   
@@ -48,9 +53,10 @@ h1 {
   line-height: 200%;
 }
 .inner {
-  padding: 40px;
+  padding: 20px;
   resize: vertical;
   overflow: auto;
+  margin: 20px;
 }
 .top{
   background-color:transparent;
