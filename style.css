@@ -31,7 +31,7 @@ h2 {
 }
 
 
-.parent {
+.index-parent {
   dislay: flex;
   background: white;
   height: 600px;
@@ -44,10 +44,29 @@ h2 {
   resize: vertical;
   overflow: auto;
 }
+.di-parent {
+  dislay: flex;
+  background: white;
+  height: 440px;
+/*   padding: 10px; */
+/*   margin: 10px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  resize: vertical;
+  overflow: auto;
+}
 
-.inner {
+.index-inner {
   color: white;
   padding: 40px; 
+  resize: vertical;
+  overflow: auto;
+}
+
+.di-inner {
+  color: white;
+  padding-left: 120px; 
   resize: vertical;
   overflow: auto;
 }
