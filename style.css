@@ -7,21 +7,81 @@ body {
   line-height: 200%;
 }
 
-h1 {
-  font-style: italic;
-  color: #0000FF;
-  font-size: large;
-  line-height: 200%;
+.title {
+  font-size:32px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-weight: 490;
+/*   font-weight: bold; */
 }
 
-h2 {
-/*   front-size: large; */
+.title-index {
+  font-size:25px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+/*   font-family: Arial,Helvetica,sans-serif; */
+/*       font-family: Helvetica,"Helvetica Neue",sans-serif; */
+  font-weight: 500;
+  color:black;
+}
+
+
+.disappear{
+/*     display: none; */
+  opacity: 0;
+}
+a.exist {
+  color:black;
+}
+a.exist:hover {
+  color:#3E89ED;
+}
+a.one, a.two, a.three {
+  color:black;
+}
+a.one:hover {
+  color:#3E89ED;
+}
+a.one:hover + .disappear{ 
+  opacity: 1;
+}
+a.two:hover {
+  color:#3E89ED;
+}
+a.three:hover {
+  color:#3E89ED;
+}
+
+
+
+.title-italic {
+  font-size:25px;
+/*   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+/*   font-family: Helvetica,"Helvetica Neue",sans-serif; */
+  font-family: Arial,Helvetica,sans-serif;
+  font-style: italic ;
+  font-weight: 500;
+}
+
+.subtitle {
+/*   font-family: "Times New Roman", Times, serif;
+  font-size: 22px; */
+/*   font-family: Helvetica,"Helvetica Neue",sans-serif; */
+  font-size: 14px;
+  font-family: Arial,Helvetica,sans-serif;
+  line-height: 1.5;
+}
+
+.subtitle + .subtitle{
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .tiny-font {
-  font-size:30px;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size:20px;
+/*   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+/*   font-family: Helvetica,"Helvetica Neue",sans-serif; */
+  font-family: Arial,Helvetica,sans-serif;
   font-style: italic ;
+  font-weight: 490;
 }
 
 
@@ -32,10 +92,8 @@ h2 {
 
 
 .index-parent {
-  dislay: flex;
   background: white;
   height: 600px;
-/*   width: 200px; */
   padding: 20px;
   margin: 20px;
   display: flex;
@@ -44,22 +102,31 @@ h2 {
   resize: vertical;
   overflow: auto;
 }
+.index-inner {
+  color: white;
+  padding: 10px; 
+  resize: vertical;
+  overflow: auto;
+  left:15%;
+  position: absolute;
+}
+
+.index-image-format {
+  position: absolute;
+  right: 15%;
+  resize: vertical;
+  width: 550px;
+  
+}
+
+/* design index */
 .di-parent {
-  dislay: flex;
+  display: flex;
   background: white;
   height: 440px;
-/*   padding: 10px; */
-/*   margin: 10px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  resize: vertical;
-  overflow: auto;
-}
-
-.index-inner {
-  color: white;
-  padding: 40px; 
   resize: vertical;
   overflow: auto;
 }
@@ -74,50 +141,29 @@ h2 {
 
 .container {
   position: relative;
-/*   margin-bottom:50px; */
 }
 
 .picture_format{
   position: absolute;
-  left: 40%;
-  top: 30px; 
-  width: 100%;
+  left: 500px;
+  top: 205px; 
   z-index: -1;
-  margin-bottom: 35px;
 }
 
-.resume_format{
-  position: absolute;
-  left:25%;
-  top: 10%;
-  width: 100%;
-}
 
 .about_text_format{
   position: absolute;
-  left:150px;
+  left:410px;
   top: 120px;
-/*   position: fixed; */
-  width: 700px;
+  width: 500px;
 }
 
-.figma_text_format{
-/*   position: absolute; */
-  top:200px;
-  left:400px;
-  width: 700px;
-  padding: 40px;
-  height: 700px;
-  vertical-align: center;
-  float: left;
+
+.inner-top {
+  color: white;
+  padding: 50px; 
+  padding-left: 70px;
+  resize: vertical;
+  overflow: auto;
 }
 
-.figma_container{
-  style=display:inline-block;
-  vertical-align:top;
-  left:400px;
-}
-
-.figma_picture{
-  float: left;
-}
